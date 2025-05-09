@@ -12,7 +12,11 @@ public class SoftwareEngineerService {
         this.softwareEngineerRepository = softwareEngineerRepository;
     }
 
-    public List<SoftwareEngineer> getAll() {
+    public List<SoftwareEngineer> getEngineers() {
         return softwareEngineerRepository.findAll();
+    }
+
+    public void addNewSoftwareEngineer(SoftwareEngineer softwareEngineer) {
+        softwareEngineerRepository.save(softwareEngineer);
     }
 }
