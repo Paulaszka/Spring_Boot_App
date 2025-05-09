@@ -14,8 +14,8 @@ public class SoftwareEngineerController {
     @GetMapping
     public List<SoftwareEngineer> getEngineers() {
         return List.of(
-                new SoftwareEngineer(1, "James", Collections.singletonList("node")),
-                new SoftwareEngineer(2, "Anna", Collections.singletonList("js"))
+                new SoftwareEngineer(1, "James", "node"),
+                new SoftwareEngineer(2, "Anna", "js")
         );
 
     }
